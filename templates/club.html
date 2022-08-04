@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="World Top transfers" />
+    <meta
+      name="keywords"
+      content="football,clubs, football club,Real Madrid, football transfer, top transfers,"
+    />
+    <link rel="icon" href="./img/inter.logo.png" />
+    <meta name="author" content="Ali Egamberdiyev" />
+    <title>Manchester City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+    <link rel="icon" href="img/inter.logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="icon">
+        </div>
+          <div class="links">
+            <div><a href="/clubs/">CLUBS</a></div>
+            <div><a href="/oxirgi/">LATEST TRANSFERS</a></div>
+            <div><a href="/players/">PLAYERS</a></div>
+            <div><a href="/u20-player/">U-20 PLAYERS</a></div>
+            <div><a href="/urinish/">TRYOUTS</a></div>
+            <div><a href="/stats/">STATS</a></div>
+            <div><a href="/about/">ABOUT US</a></div>
+          </div>
+      </div>
+      <div class="country-clubs">
+        <h2 id="title">Clubs by country</h2>
+        <div class="country">
+          {% for d in davlatlar %}
+          <div>
+            <h3><a href="/davlat/{{d.id}}/">{{d.nom}}</a> <br /></h3>
+          </div>
+          {% endfor %}
+        </div>
+        <hr>
+        <h2><a href="/transfer/">Transfers archive</a></h2>
+      </div>
+      <div class="nav">
+        <h2>– Manchester City –</h2>
+        <table class="content-nav">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>player</td>
+              <td>position</td>
+              <td>nationality</td>
+              <td>
+                transfer value, <br />
+                mill. euro
+              </td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="content">
+        <table class="players">
+         
+          <tr>
+            <td>1</td>
+            <td>Phil Foden</td>
+            <td>Midfielder</td>
+            <td>England</td>
+            <td>120</td>
+          </tr>
+          
+          <tr>
+            <td>2</td>
+            <td>Rúben Dias</td>
+            <td>Defender</td>
+            <td>Portugal</td>
+            <td>115</td>
+          </tr>
+          
+          <tr>
+            <td>3</td>
+            <td>Jack Grealish</td>
+            <td>Forward</td>
+            <td>England</td>
+            <td>103</td>
+          </tr>
+          
+          <tr>
+            <td>4</td>
+            <td>Kevin De Bruyne</td>
+            <td>Midfielder</td>
+            <td>Belgium</td>
+            <td>95</td>
+          </tr>
+          
+          <tr>
+            <td>5</td>
+            <td>Rodrigo Hernández</td>
+            <td>Midfielder</td>
+            <td>Spain</td>
+            <td>90</td>
+          </tr>
+          
+          <tr>
+            <td>6</td>
+            <td>Bernardo Silva</td>
+            <td>Forward</td>
+            <td>Portugal</td>
+            <td>80</td>
+          </tr>
+          
+          <tr>
+            <td>7</td>
+            <td>Ederson</td>
+            <td>Keeper</td>
+            <td>Brazil</td>
+            <td>80</td>
+          </tr>
+          
+          <tr>
+            <td>8</td>
+            <td>Erling Haaland</td>
+            <td>Forward</td>
+            <td>Norway</td>
+            <td>75</td>
+          </tr>
+          
+          <tr>
+            <td>9</td>
+            <td>João Cancelo</td>
+            <td>Defender</td>
+            <td>Portugal</td>
+            <td>70</td>
+          </tr>
+          
+          <tr>
+            <td>10</td>
+            <td>Aymeric Laporte</td>
+            <td>Defender</td>
+            <td>France</td>
+            <td>50</td>
+          </tr>
+          
+          <tr>
+            <td>11</td>
+            <td>Kalvin Phillips</td>
+            <td>Midfielder</td>
+            <td>England</td>
+            <td>49</td>
+          </tr>
+          
+          <tr>
+            <td>12</td>
+            <td>Nathan Aké</td>
+            <td>Defender</td>
+            <td>Netherlands</td>
+            <td>45</td>
+          </tr>
+          
+          <tr>
+            <td>13</td>
+            <td>John Stones</td>
+            <td>Defender</td>
+            <td>England</td>
+            <td>40</td>
+          </tr>
+          
+          <tr>
+            <td>14</td>
+            <td>Riyad Mahrez</td>
+            <td>Forward</td>
+            <td>Algeria</td>
+            <td>35</td>
+          </tr>
+          
+          <tr>
+            <td>15</td>
+            <td>Ilkay Gündogan</td>
+            <td>Midfielder</td>
+            <td>Germany</td>
+            <td>30</td>
+          </tr>
+          
+          <tr>
+            <td>16</td>
+            <td>Kyle Walker</td>
+            <td>Defender</td>
+            <td>England</td>
+            <td>25</td>
+          </tr>
+          
+          <tr>
+            <td>17</td>
+            <td>Julián Álvarez</td>
+            <td>Forward</td>
+            <td>Argentina</td>
+            <td>25</td>
+          </tr>
+          
+          <tr>
+            <td>18</td>
+            <td>Yangel Herrera</td>
+            <td>Midfielder</td>
+            <td>Venezuela</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>19</td>
+            <td>Taylor Harwood-Bellis</td>
+            <td>Defender</td>
+            <td>England</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>20</td>
+            <td>Kayky</td>
+            <td>Forward</td>
+            <td>Brazil</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>21</td>
+            <td>Yan Couto</td>
+            <td>Defender</td>
+            <td>Brazil</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>22</td>
+            <td>Cole Palmer</td>
+            <td>Midfielder</td>
+            <td>England</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>23</td>
+            <td>Issa Kaboré</td>
+            <td>Defender</td>
+            <td>Burkina Faso</td>
+            <td>20</td>
+          </tr>
+          
+          <tr>
+            <td>24</td>
+            <td>Liam Delap</td>
+            <td>Forward</td>
+            <td>England</td>
+            <td>20</td>
+          </tr>
+          
+        </table>
+        <p>It is a list of Manchester City players whose predicted transfer value is at least 20 million euro.	</p>
+        <div class="clubs-info">
+          <h2>Manchester City</h2>
+          <div>
+            <div>
+              <div><h3>President:</h3></div>
+              <div><span>Khaldoon Khalifa Al Mubarak</span></div>
+            </div>
+            <div>
+              <div><h3>Coach:</h3></div>
+              <div><span>Pep Guardiola</span></div>
+            </div>
+            <div>
+              <div><h3>Year of foundation:</h3></div>
+              <div><span>Jan. 1, 1880</span></div>
+            </div>
+            <div>
+              <div><h3>Record arrival:</h3></div>
+              <div><span>Jack Grealish (From Aston Villa, Transfer fee 117,5 mill. euro)</span></div>
+            </div>
+            <div>
+              <div><h3>Record departure:</h3></div>
+              <div><span>Leroy Sané (To Bayern Munich, Transfer fee 45 mill. euro)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer state-footer">
+        <a href="https://www.facebook.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-facebook-f"></i> &nbsp;
+            <h3>facebook</h3>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-instagram"></i> &nbsp;
+            <h3>Instagram</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="/static/script.js"></script>
+</html>

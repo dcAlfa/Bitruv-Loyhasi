@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="World Top transfers">
+    <meta name="keywords" content="football,clubs, football club,Real Madrid, football transfer, top transfers,">
+    <link rel="icon" href="./img/inter.logo.png">
+    <meta name="author" content="Ali Egamberdiyev">
+    <title>2017/18 season</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/inter.logo.png">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+          <div class="links">
+            <div><a href="/clubs/">CLUBS</a></div>
+            <div><a href="/oxirgi/">LATEST TRANSFERS</a></div>
+            <div><a href="/players/">PLAYERS</a></div>
+            <div><a href="/u20-player/">U-20 PLAYERS</a></div>
+            <div><a href="/urinish/">TRYOUTS</a></div>
+            <div><a href="/stats/">STATS</a></div>
+            <div><a href="/about/">ABOUT US</a></div>
+          </div>
+      </div>
+      <div class="country-clubs">
+        <h2 id="title">Clubs by country</h2>
+        <div class="country">
+          {% for d in davlatlar %}
+          <div>
+            <h3><a href="/davlat/{{d.id}}/">{{d.nom}}</a> <br /></h3>
+          </div>
+          {% endfor %}
+        </div>
+        <hr>
+        <h2><a href="/transfer/">Transfers archive</a></h2>
+      </div>
+      <div class="nav">
+        <h2>– TRANSFERS ARCHIVE –</h2>
+        <table class="content-nav"></table>
+      </div>
+      <div class="nav">
+          <h2>– TOP TRANSFERS –
+            SEASON – 2017/18</h2>
+          <table class="content-nav">
+            <thead>
+              <tr>
+                <td>#player</td>
+                <td>from</td>
+                <td>to</td>
+                <td>
+                  transfer fee, <br />
+                  mill. euro
+                </td>
+                <td>
+                  transfer fee, <br />
+                  mill. euro, <br />
+                  by tft.com
+                </td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      <div class="latest-transfers">
+        <table class="players">
+          
+          <tr>
+            <td>1 Neymar</td>
+            <td>Barcelona</td>
+            <td>PSG</td>
+            <td>222.0</td>
+            <td>222.0</td>
+          </tr>
+          
+          <tr>
+            <td>2 Ousmane Dembélé</td>
+            <td>Borussia D</td>
+            <td>Barcelona</td>
+            <td>140.0</td>
+            <td>106.0</td>
+          </tr>
+          
+          <tr>
+            <td>3 Philippe Coutinho</td>
+            <td>Liverpool</td>
+            <td>Barcelona</td>
+            <td>135.0</td>
+            <td>150.0</td>
+          </tr>
+          
+          <tr>
+            <td>4 Romelu Lukaku</td>
+            <td>Everton</td>
+            <td>Manchester United</td>
+            <td>84.7</td>
+            <td>83.0</td>
+          </tr>
+          
+          <tr>
+            <td>5 Virgil van Dijk</td>
+            <td>Southampton</td>
+            <td>Liverpool</td>
+            <td>84.65</td>
+            <td>44.0</td>
+          </tr>
+          
+          <tr>
+            <td>6 Álvaro Morata</td>
+            <td>Real Madrid</td>
+            <td>Chelsea</td>
+            <td>66.0</td>
+            <td>65.0</td>
+          </tr>
+          
+          <tr>
+            <td>7 Aymeric Laporte</td>
+            <td>Athletic B</td>
+            <td>Manchester City</td>
+            <td>65.0</td>
+            <td>45.0</td>
+          </tr>
+          
+          <tr>
+            <td>8 Pierre-Emerick Aubameyang</td>
+            <td>Borussia D</td>
+            <td>Arsenal</td>
+            <td>63.75</td>
+            <td>65.0</td>
+          </tr>
+          
+          <tr>
+            <td>9 Diego Costa</td>
+            <td>Chelsea</td>
+            <td>Atlético M</td>
+            <td>60.0</td>
+            <td>65.0</td>
+          </tr>
+          
+          <tr>
+            <td>10 Benjamin Mendy</td>
+            <td>Monaco</td>
+            <td>Manchester City</td>
+            <td>57.5</td>
+            <td>55.0</td>
+          </tr>
+          
+          <tr>
+            <td>11 Alexandre Lacazette</td>
+            <td>Lyon</td>
+            <td>Arsenal</td>
+            <td>53.0</td>
+            <td>52.0</td>
+          </tr>
+          
+          <tr>
+            <td>12 Kyle Walker</td>
+            <td>Spurs</td>
+            <td>Manchester City</td>
+            <td>52.7</td>
+            <td>45.0</td>
+          </tr>
+          
+          <tr>
+            <td>13 Bernardo Silva</td>
+            <td>Monaco</td>
+            <td>Manchester City</td>
+            <td>50.0</td>
+            <td>45.0</td>
+          </tr>
+          
+          <tr>
+            <td>14 Gylfi Sigurdsson</td>
+            <td>Swansea</td>
+            <td>Everton</td>
+            <td>49.4</td>
+            <td>50.0</td>
+          </tr>
+          
+          <tr>
+            <td>15 Nemanja Matic</td>
+            <td>Chelsea</td>
+            <td>Manchester United</td>
+            <td>44.7</td>
+            <td>45.0</td>
+          </tr>
+          
+          <tr>
+            <td>16 Mohamed Salah</td>
+            <td>Roma</td>
+            <td>Liverpool</td>
+            <td>42.0</td>
+            <td>42.0</td>
+          </tr>
+          
+          <tr>
+            <td>17 Leonardo Bonucci</td>
+            <td>Juventus</td>
+            <td>Milan</td>
+            <td>42.0</td>
+            <td>42.0</td>
+          </tr>
+          
+          <tr>
+            <td>18 Davinson Sánchez</td>
+            <td>Ajax</td>
+            <td>Spurs</td>
+            <td>42.0</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>19 Corentin Tolisso</td>
+            <td>Lyon</td>
+            <td>Bayern</td>
+            <td>41.5</td>
+            <td>40.0</td>
+          </tr>
+          
+          <tr>
+            <td>20 Ederson</td>
+            <td>Benfica</td>
+            <td>Manchester City</td>
+            <td>40.0</td>
+            <td>23.0</td>
+          </tr>
+          
+          <tr>
+            <td>21 Tiemoué Bakayoko</td>
+            <td>Monaco</td>
+            <td>Chelsea</td>
+            <td>40.0</td>
+            <td>40.0</td>
+          </tr>
+          
+          <tr>
+            <td>22 Federico Bernardeschi</td>
+            <td>Fiorentina</td>
+            <td>Juventus</td>
+            <td>40.0</td>
+            <td>40.0</td>
+          </tr>
+          
+          <tr>
+            <td>23 Paulinho Bezerra</td>
+            <td>Guangzhou</td>
+            <td>Barcelona</td>
+            <td>40.0</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>24 Cédric Bakambu</td>
+            <td>Villareal</td>
+            <td>Beijing</td>
+            <td>40.0</td>
+            <td>40.0</td>
+          </tr>
+          
+          <tr>
+            <td>25 André Silva</td>
+            <td>Porto</td>
+            <td>Milan</td>
+            <td>38.0</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>26 Alex Oxlade-Chamberlain</td>
+            <td>Arsenal</td>
+            <td>Liverpool</td>
+            <td>38.0</td>
+            <td>37.0</td>
+          </tr>
+          
+          <tr>
+            <td>27 Danny Drinkwater</td>
+            <td>Leicester</td>
+            <td>Chelsea</td>
+            <td>37.9</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>28 Nélson Semedo</td>
+            <td>Benfica</td>
+            <td>Barcelona</td>
+            <td>35.7</td>
+            <td>31.0</td>
+          </tr>
+          
+          <tr>
+            <td>29 Vitolo</td>
+            <td>Sevilla</td>
+            <td>Atlético M</td>
+            <td>35.6</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>30 Victor Lindelöf</td>
+            <td>Benfica</td>
+            <td>Manchester United</td>
+            <td>35.0</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>31 Antonio Rüdiger</td>
+            <td>Roma</td>
+            <td>Chelsea</td>
+            <td>35.0</td>
+            <td>34.0</td>
+          </tr>
+          
+          <tr>
+            <td>32 Henrikh Mkhitaryan</td>
+            <td>Manchester United</td>
+            <td>Arsenal</td>
+            <td>34.0</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>33 Alexis Sánchez</td>
+            <td>Arsenal</td>
+            <td>Manchester United</td>
+            <td>34.0</td>
+            <td>35.0</td>
+          </tr>
+          
+          <tr>
+            <td>34 Milan Skriniar</td>
+            <td>Sampdoria</td>
+            <td>Inter</td>
+            <td>34.0</td>
+            <td>18.0</td>
+          </tr>
+          
+          <tr>
+            <td>35 Iñigo Martínez</td>
+            <td>Sociedad</td>
+            <td>Athletic B</td>
+            <td>32.0</td>
+            <td>28.0</td>
+          </tr>
+          
+          <tr>
+            <td>36 Alessandro Bastoni</td>
+            <td>Atalanta</td>
+            <td>Inter</td>
+            <td>31.1</td>
+            <td>10.0</td>
+          </tr>
+          
+          <tr>
+            <td>37 Mamadou Sakho</td>
+            <td>Liverpool</td>
+            <td>Crystal Palace</td>
+            <td>30.5</td>
+            <td>27.0</td>
+          </tr>
+          
+          <tr>
+            <td>38 Yannick Carrasco</td>
+            <td>Atlético M</td>
+            <td>Dalian</td>
+            <td>30.0</td>
+            <td>30.0</td>
+          </tr>
+          
+          <tr>
+            <td>39 Danilo Luiz</td>
+            <td>Real Madrid</td>
+            <td>Manchester City</td>
+            <td>30.0</td>
+            <td>28.0</td>
+          </tr>
+          
+          <tr>
+            <td>40 Keita Baldé</td>
+            <td>Lazio</td>
+            <td>Monaco</td>
+            <td>30.0</td>
+            <td>30.0</td>
+          </tr>
+          
+          <tr>
+            <td>41 Jordan Pickford</td>
+            <td>Sunderland</td>
+            <td>Everton</td>
+            <td>28.5</td>
+            <td>10.0</td>
+          </tr>
+          
+          <tr>
+            <td>42 Michael Keane</td>
+            <td>Burnley</td>
+            <td>Everton</td>
+            <td>28.5</td>
+            <td>27.0</td>
+          </tr>
+          
+          <tr>
+            <td>43 Lucas Moura</td>
+            <td>PSG</td>
+            <td>Spurs</td>
+            <td>28.4</td>
+            <td>28.0</td>
+          </tr>
+          
+          <tr>
+            <td>44 Kingsley Coman</td>
+            <td>Juventus</td>
+            <td>Bayern</td>
+            <td>28.0</td>
+            <td>21.0</td>
+          </tr>
+          
+          <tr>
+            <td>45 Kelechi Iheanacho</td>
+            <td>Manchester City</td>
+            <td>Leicester</td>
+            <td>27.7</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>46 Davy Klaassen</td>
+            <td>Ajax</td>
+            <td>Everton</td>
+            <td>27.0</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>47 Nikola Maksimovic</td>
+            <td>Torino</td>
+            <td>Napoli</td>
+            <td>26.0</td>
+            <td>12.0</td>
+          </tr>
+          
+          <tr>
+            <td>48 Youri Tielemans</td>
+            <td>Anderlecht</td>
+            <td>Monaco</td>
+            <td>25.0</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>49 Andriy Yarmolenko</td>
+            <td>Dynamo Kyiv</td>
+            <td>Borussia D</td>
+            <td>25.0</td>
+            <td>18.0</td>
+          </tr>
+          
+          <tr>
+            <td>50 Serge Aurier</td>
+            <td>PSG</td>
+            <td>Spurs</td>
+            <td>25.0</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>51 Davide Zappacosta</td>
+            <td>Torino</td>
+            <td>Chelsea</td>
+            <td>25.0</td>
+            <td>10.0</td>
+          </tr>
+          
+          <tr>
+            <td>52 Juan Cuadrado</td>
+            <td>Chelsea</td>
+            <td>Juventus</td>
+            <td>25.0</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>53 Blaise Matuidi</td>
+            <td>PSG</td>
+            <td>Juventus</td>
+            <td>25.0</td>
+            <td>22.0</td>
+          </tr>
+          
+          <tr>
+            <td>54 Luis Muriel</td>
+            <td>Sampdoria</td>
+            <td>Sevilla</td>
+            <td>24.5</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>55 Matías Vecino</td>
+            <td>Fiorentina</td>
+            <td>Inter</td>
+            <td>24.0</td>
+            <td>15.0</td>
+          </tr>
+          
+          <tr>
+            <td>56 Theo Hernández</td>
+            <td>Atlético M</td>
+            <td>Real Madrid</td>
+            <td>24.0</td>
+            <td>28.0</td>
+          </tr>
+          
+          <tr>
+            <td>57 Andrea Conti</td>
+            <td>Atalanta</td>
+            <td>Milan</td>
+            <td>24.0</td>
+            <td>24.0</td>
+          </tr>
+          
+          <tr>
+            <td>58 Hakan Calhanoglu</td>
+            <td>Bayer</td>
+            <td>Milan</td>
+            <td>23.3</td>
+            <td>22.0</td>
+          </tr>
+          
+          <tr>
+            <td>59 Leandro Paredes</td>
+            <td>Roma</td>
+            <td>Zenit</td>
+            <td>23.0</td>
+            <td>23.0</td>
+          </tr>
+          
+          <tr>
+            <td>60 Nathan Aké</td>
+            <td>Chelsea</td>
+            <td>Bournemouth</td>
+            <td>22.8</td>
+            <td>18.0</td>
+          </tr>
+          
+          <tr>
+            <td>61 André Ayew</td>
+            <td>West Ham</td>
+            <td>Swansea</td>
+            <td>22.8</td>
+            <td>22.0</td>
+          </tr>
+          
+          <tr>
+            <td>62 Theo Walcott</td>
+            <td>Arsenal</td>
+            <td>Everton</td>
+            <td>22.5</td>
+            <td>22.0</td>
+          </tr>
+          
+          <tr>
+            <td>63 Cenk Tosun</td>
+            <td>Besiktas</td>
+            <td>Everton</td>
+            <td>22.5</td>
+            <td>19.0</td>
+          </tr>
+          
+          <tr>
+            <td>64 Roberto Gagliardini</td>
+            <td>Atalanta</td>
+            <td>Inter</td>
+            <td>22.5</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>65 Marko Arnautovic</td>
+            <td>Stoke City</td>
+            <td>West Ham</td>
+            <td>22.3</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>66 Guido Carrillo</td>
+            <td>Monaco</td>
+            <td>Southampton</td>
+            <td>22.0</td>
+            <td>12.0</td>
+          </tr>
+          
+          <tr>
+            <td>67 Rodrigo Bentancur</td>
+            <td>Boca Juniors</td>
+            <td>Juventus</td>
+            <td>21.7</td>
+            <td>10.0</td>
+          </tr>
+          
+          <tr>
+            <td>68 Manuel Akanji</td>
+            <td>Basel</td>
+            <td>Borussia D</td>
+            <td>21.5</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td>69 Dalbert</td>
+            <td>Nice</td>
+            <td>Inter</td>
+            <td>21.0</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>70 Pietro Pellegri</td>
+            <td>Genoa</td>
+            <td>Monaco</td>
+            <td>20.9</td>
+            <td>14.0</td>
+          </tr>
+          
+          <tr>
+            <td>71 Jadon Sancho</td>
+            <td>Manchester City</td>
+            <td>Borussia D</td>
+            <td>20.59</td>
+            <td>12.0</td>
+          </tr>
+          
+          <tr>
+            <td>72 Adrien Silva</td>
+            <td>Sporting</td>
+            <td>Leicester</td>
+            <td>20.5</td>
+            <td>25.0</td>
+          </tr>
+          
+          <tr>
+            <td>73 Andre Gray</td>
+            <td>Burnley</td>
+            <td>Watford</td>
+            <td>20.4</td>
+            <td>12.0</td>
+          </tr>
+          
+          <tr>
+            <td>74 Niklas Süle</td>
+            <td>Hoffenheim</td>
+            <td>Bayern</td>
+            <td>20.0</td>
+            <td>22.0</td>
+          </tr>
+          
+          <tr>
+            <td>75 Óliver Torres</td>
+            <td>Atlético M</td>
+            <td>Porto</td>
+            <td>20.0</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>76 Maximilian Philipp</td>
+            <td>Freiburg</td>
+            <td>Borussia D</td>
+            <td>20.0</td>
+            <td>12.0</td>
+          </tr>
+          
+          <tr>
+            <td>77 Kevin Kampl</td>
+            <td>Bayer</td>
+            <td>Leipzig</td>
+            <td>20.0</td>
+            <td>20.0</td>
+          </tr>
+          
+          <tr>
+            <td>78 Emerson</td>
+            <td>Roma</td>
+            <td>Chelsea</td>
+            <td>20.0</td>
+            <td>20.0</td>
+          </tr>
+          
+        </table>
+        <hr>
+        <p>The list of top transfers comleted  in the transfer windows 2017/18. It is a comparative table  of  the completed transfer value and the prediction on the transfer date. Transfers with value at least 20 million euro are handled.</p>
+      </div>
+      <div class="footer">
+        <a href="https://www.facebook.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-facebook-f"></i> &nbsp;
+              <h3>facebook</h3>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-instagram"></i> &nbsp;
+            <h3>Instagram</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="/static/script.js"></script>
+</html>
